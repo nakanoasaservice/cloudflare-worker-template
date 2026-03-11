@@ -12,14 +12,14 @@
 		"check": "biome check"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.4",
-		"@cloudflare/vitest-pool-workers": "^0.12.4",
-		"@types/node": "^25.3.2",
+		"@biomejs/biome": "^2.4.6",
+		"@cloudflare/vitest-pool-workers": "^0.12.21",
+		"@types/node": "^25.4.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
-		"wrangler": "^4.69.0"
+		"wrangler": "^4.72.0"
 	},
 	"dependencies": {
-		"hono": "^4.12.3"
+		"hono": "^4.12.7"
 	}
 }
