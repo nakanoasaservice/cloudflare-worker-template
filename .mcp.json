@@ -1,8 +1,16 @@
 {
 	"mcpServers": {
-		"cloudflare": {
-			"type": "http",
+		"cloudflare-api": {
+			"url": "https://mcp.cloudflare.com/mcp"
+		},
+		"cloudflare-docs": {
+			"url": "https://docs.mcp.cloudflare.com/mcp"
+		},
+		"cloudflare-bindings": {
 			"url": "https://bindings.mcp.cloudflare.com/mcp"
+		},
+		"cloudflare-builds": {
+			"url": "https://builds.mcp.cloudflare.com/mcp"
 		}
 	}
 }
