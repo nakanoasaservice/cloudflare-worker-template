@@ -2,6 +2,7 @@
 	"name": "cloudflare-worker-template",
 	"version": "0.0.0",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
@@ -9,7 +10,11 @@
 		"test": "vitest",
 		"cf-typegen": "wrangler types",
 		"check:fix": "biome check --write",
-		"check": "biome check"
+		"check": "biome check",
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"hono": "^4.12.27"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.1",
@@ -18,8 +23,5 @@
 		"typescript": "^6.0.3",
 		"vitest": "^4.1.9",
 		"wrangler": "^4.105.0"
-	},
-	"dependencies": {
-		"hono": "^4.12.27"
 	}
 }
