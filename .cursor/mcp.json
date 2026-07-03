@@ -1,7 +1,1 @@
-{
-	"mcpServers": {
-		"cloudflare": {
-			"url": "https://docs.mcp.cloudflare.com/mcp"
-		}
-	}
-}
+../.mcp.json
