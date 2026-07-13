@@ -14,14 +14,14 @@
 		"check-types": "tsc --noEmit"
 	},
 	"dependencies": {
-		"hono": "^4.12.27"
+		"hono": "^4.12.30"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.2",
-		"@cloudflare/vitest-pool-workers": "^0.18.0",
-		"@types/node": "^26.1.0",
+		"@biomejs/biome": "^2.5.3",
+		"@cloudflare/vitest-pool-workers": "^0.18.4",
+		"@types/node": "^26.1.1",
 		"typescript": "^7.0.2",
 		"vitest": "^4.1.10",
-		"wrangler": "^4.107.0"
+		"wrangler": "^4.110.0"
 	}
 }
