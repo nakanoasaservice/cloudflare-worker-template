@@ -2,8 +2,8 @@
 
 version: 2
 updates:
-  # Bun Package
-  - package-ecosystem: "bun"
+  # npm packages (pnpm)
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
