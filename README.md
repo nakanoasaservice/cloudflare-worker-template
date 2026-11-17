@@ -12,21 +12,23 @@ A minimal Cloudflare Workers template using [Hono](https://hono.dev/) and TypeSc
 
 ## Getting Started
 
+Requires Node.js and [pnpm](https://pnpm.io/). With [mise](https://mise.jdx.dev/), `mise install` sets up the versions pinned in [mise.toml](mise.toml). Otherwise, run `corepack enable` to use the pnpm version pinned in `packageManager` in [package.json](package.json).
+
 ```bash
-bun install
-bun run dev
+pnpm install
+pnpm run dev
 ```
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `bun run dev` | Start local dev server |
-| `bun run deploy` | Deploy to Cloudflare Workers |
-| `bun run test` | Run tests |
-| `bun run check` | Lint and format check |
-| `bun run check:fix` | Auto-fix lint and format issues |
-| `bun run cf-typegen` | Generate Cloudflare binding types |
+| `pnpm run dev` | Start local dev server |
+| `pnpm run deploy` | Deploy to Cloudflare Workers |
+| `pnpm run test` | Run tests |
+| `pnpm run check` | Lint and format check |
+| `pnpm run check:fix` | Auto-fix lint and format issues |
+| `pnpm run cf-typegen` | Generate Cloudflare binding types |
 
 ## Project Structure
 

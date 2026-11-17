@@ -1,0 +1,7 @@
+# One virtual store per machine: every project and worktree's node_modules
+# only holds symlinks into it, so dependencies are not copied again.
+virtualStoreType: global
+
+allowBuilds:
+  esbuild: true
+  workerd: true

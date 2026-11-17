@@ -6,7 +6,7 @@ STOP. Your knowledge of Cloudflare Workers APIs and limits may be outdated. Alwa
 
 - https://developers.cloudflare.com/workers/
 - MCP: `https://docs.mcp.cloudflare.com/mcp`
-- Hono: https://hono.dev/docs · CLI: `bunx @hono/cli <command>`
+- Hono: https://hono.dev/docs · CLI: `pnpm dlx @hono/cli <command>`
 
 For all limits and quotas, retrieve from the product's `/platform/limits/` page. eg. `/workers/platform/limits`
 
@@ -14,11 +14,11 @@ For all limits and quotas, retrieve from the product's `/platform/limits/` page.
 
 | Command | Purpose |
 |---------|---------|
-| `bun run dev` | Local development |
-| `bun run deploy` | Deploy to Cloudflare |
-| `bun run cf-typegen` | Generate TypeScript types |
-| `bun run check:fix` | Lint + format (autofix) |
-| `bunx @hono/cli <command>` | Hono CLI |
+| `pnpm run dev` | Local development |
+| `pnpm run deploy` | Deploy to Cloudflare |
+| `pnpm run cf-typegen` | Generate TypeScript types |
+| `pnpm run check:fix` | Lint + format (autofix) |
+| `pnpm dlx @hono/cli <command>` | Hono CLI |
 
 Run `cf-typegen` after changing bindings in wrangler.jsonc.
 
