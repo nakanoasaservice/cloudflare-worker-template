@@ -12,13 +12,15 @@ For all limits and quotas, retrieve from the product's `/platform/limits/` page.
 
 ## Commands
 
-| Command | Purpose |
-|---------|---------|
-| `pnpm run dev` | Local development |
-| `pnpm run deploy` | Deploy to Cloudflare |
-| `pnpm run cf-typegen` | Generate TypeScript types |
-| `pnpm run check:fix` | Lint + format (autofix) |
-| `pnpm dlx @hono/cli <command>` | Hono CLI |
+| Command                        | Purpose                   |
+| ------------------------------ | ------------------------- |
+| `pnpm run dev`                 | Local development         |
+| `pnpm run deploy`              | Deploy to Cloudflare      |
+| `pnpm run cf-typegen`          | Generate TypeScript types |
+| `pnpm run check`               | Lint + format + typecheck |
+| `pnpm run check:fix`           | Lint + format (autofix)   |
+| `pnpm run test`                | Run tests                 |
+| `pnpm dlx @hono/cli <command>` | Hono CLI                  |
 
 Run `cf-typegen` after changing bindings in wrangler.jsonc.
 

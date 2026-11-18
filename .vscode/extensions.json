@@ -1,7 +1,6 @@
 {
 	"recommendations": [
-		"biomejs.biome",
-		"streetsidesoftware.code-spell-checker",
-		"vitest.explorer"
+		"VoidZero.vite-plus-extension-pack",
+		"streetsidesoftware.code-spell-checker"
 	]
 }

@@ -5,3 +5,8 @@ virtualStoreType: global
 allowBuilds:
   esbuild: true
   workerd: true
+
+# Vite+ ships its own builds of Vite and Vitest.
+overrides:
+  vite: npm:@voidzero-dev/vite-plus-core@1.6.0
+  vitest: 5.1.0
