@@ -7,8 +7,8 @@ A minimal Cloudflare Workers template using [Hono](https://hono.dev/) and TypeSc
 - **Runtime**: Cloudflare Workers
 - **Framework**: Hono
 - **Language**: TypeScript
-- **Test**: Vitest + `@cloudflare/vitest-pool-workers`
-- **Linter/Formatter**: Biome
+- **Toolchain**: [Vite+](https://viteplus.dev/) (Oxlint, Oxfmt and type checking via `vp check`; Vitest via `vp test`)
+- **Test**: Vitest + `@cloudflare/vitest-plugin`
 
 ## Getting Started
 
@@ -21,13 +21,13 @@ pnpm run dev
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `pnpm run dev` | Start local dev server |
-| `pnpm run deploy` | Deploy to Cloudflare Workers |
-| `pnpm run test` | Run tests |
-| `pnpm run check` | Lint and format check |
-| `pnpm run check:fix` | Auto-fix lint and format issues |
+| Command               | Description                       |
+| --------------------- | --------------------------------- |
+| `pnpm run dev`        | Start local dev server            |
+| `pnpm run deploy`     | Deploy to Cloudflare Workers      |
+| `pnpm run test`       | Run tests                         |
+| `pnpm run check`      | Lint, format and type check       |
+| `pnpm run check:fix`  | Auto-fix lint and format issues   |
 | `pnpm run cf-typegen` | Generate Cloudflare binding types |
 
 ## Project Structure

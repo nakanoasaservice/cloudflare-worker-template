@@ -43,8 +43,11 @@
 		"noUncheckedIndexedAccess": true,
 		"noPropertyAccessFromIndexSignature": true,
 
-		"types": ["./worker-configuration.d.ts", "node"]
+		"types": [
+			"./worker-configuration.d.ts",
+			"node",
+			"@cloudflare/vitest-plugin/types"
+		]
 	},
-	"exclude": ["test"],
-	"include": ["worker-configuration.d.ts", "src/**/*.ts"]
+	"include": ["worker-configuration.d.ts", "src/**/*.ts", "test/**/*.ts"]
 }
