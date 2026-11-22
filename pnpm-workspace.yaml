@@ -11,7 +11,6 @@ overrides:
   vite@*: "catalog:"
   vitest@*: "catalog:"
 
-pmOnFail: download
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
   vitest: 5.1.0
