@@ -8,5 +8,16 @@ allowBuilds:
 
 # Vite+ ships its own builds of Vite and Vitest.
 overrides:
-  vite: npm:@voidzero-dev/vite-plus-core@1.6.0
+  vite@*: "catalog:"
+  vitest@*: "catalog:"
+
+pmOnFail: download
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
   vitest: 5.1.0
+  vite-plus: 1.7.0
+peerDependencyRules:
+  allowAny:
+    - vitest
+  allowedVersions:
+    vitest: "*"

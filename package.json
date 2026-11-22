@@ -8,10 +8,12 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
-		"test": "vp test",
+		"test": "vp test run",
 		"cf-typegen": "wrangler types",
 		"check:fix": "vp check --fix",
-		"check": "vp check"
+		"check": "vp check",
+		"build": "vp run build:worker",
+		"build:worker": "wrangler deploy --dry-run --outdir dist"
 	},
 	"dependencies": {
 		"hono": "^4.13.5"
@@ -19,9 +21,9 @@
 	"devDependencies": {
 		"@cloudflare/vitest-plugin": "^1.8.3",
 		"@types/node": "^26.4.1",
-		"vite": "npm:@voidzero-dev/vite-plus-core@1.6.0",
-		"vite-plus": "1.6.0",
-		"vitest": "5.1.0",
+		"vite": "catalog:",
+		"vite-plus": "catalog:",
+		"vitest": "catalog:",
 		"wrangler": "^4.129.0"
 	}
 }
